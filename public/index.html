@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grill Me</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-pane" aria-label="Grill Me conversation">
+        <header class="topbar">
+          <div>
+            <h1>Grill Me</h1>
+            <p>Stress-test a plan, one hard question at a time.</p>
+          </div>
+          <button id="newChat" class="icon-button" type="button" aria-label="Start new conversation" title="New conversation">
+            <span aria-hidden="true">↻</span>
+          </button>
+        </header>
+
+        <div id="messages" class="messages" aria-live="polite">
+          <article class="message assistant-message">
+            <div class="message-label">Grill Me</div>
+            <p>Drop the plan you want tested. I’ll ask one question at a time and include my recommended answer.</p>
+          </article>
+        </div>
+
+        <form id="composer" class="composer">
+          <label class="sr-only" for="promptInput">Your idea or answer</label>
+          <textarea id="promptInput" rows="1" placeholder="Describe the plan, or answer the current question..." autofocus></textarea>
+          <div class="composer-actions">
+            <button id="concludeButton" class="secondary-button" type="button">End &amp; summarize</button>
+            <button id="sendButton" class="send-button" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
