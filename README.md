@@ -14,7 +14,7 @@ Required environment variables:
 
 ```bash
 OPENAI_API_KEY=sk-your-key
-OPENAI_BASE_URL=https://api.cloudalpha.top
+OPENAI_BASE_URL=xxxx
 OPENAI_MODEL=gpt-5.5
 OPENAI_REASONING_EFFORT=low
 ```
